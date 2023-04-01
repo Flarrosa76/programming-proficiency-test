@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    WORK HERE
+    <TableContent/>
   </div>
 </template>
 
 <script>
-import { users, propertyTypes, properties } from '@/mocks/api';
+import TableContent from './components/TableContent.vue';
 
 export default {
   name: 'App',
-  data: () => ({
-    users,
-    propertyTypes,
-    properties,
-  }),
+  components: {
+    TableContent,
+  },
 };
 </script>
